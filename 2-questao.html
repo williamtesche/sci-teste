@@ -7,10 +7,37 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>2-questao</h1>
-    1-valor em Reais<input placeholder="R$"/>
-    <br>
-    <button>calcular</button>
+            <h1>2-questao</h1>
 
+       <p>Converter Reais para dólares.</p>
+        <form>
+            <fieldset>
+                <label>Reais</label>
+                <input type="text" id="reais" />
+                <input type="submit"  onclick="conversor()" />
+            </fieldset>
+        </form>
+
+    <script type="text/javascript">
+        var dolares = 0;
+
+        function conversor(){
+            //acessar o que foi digitado
+            var reais = document.getElementById('reais').value;
+
+            //converter de string para float
+             reais = parseFloat(reais);
+
+            //converter para dolares
+            dolares = reais / 4.98;
+
+            console.log(dolares);
+
+            alert(dolares + " dolares");
+        }
+    </script>
+    <br>
+    <br>
+    <button><a href="3-questao.html">Segunda questao</a></button>
 </body>
 </html>
