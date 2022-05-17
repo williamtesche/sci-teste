@@ -1,43 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-            <h1>2-questao</h1>
+  </head>
+  <body>
+    <h1>2-questao</h1>
 
-       <p>Converter Reais para dólares.</p>
-        <form>
-            <fieldset>
-                <label>Reais</label>
-                <input type="text" id="reais" />
-                <input type="submit"  onclick="conversor()" />
-            </fieldset>
-        </form>
+    <p>Converter Reais para dólares.</p>
+    <form>
+      <fieldset>
+        <label>Reais</label>
+        <input type="text" id="reais" />
+        <input type="submit" onclick="conversor()" />
+      </fieldset>
+    </form>
 
     <script type="text/javascript">
-        var dolares = 0;
+      var dolares = 0;
 
-        function conversor(){
-            //acessar o que foi digitado
-            var reais = document.getElementById('reais').value;
+      function conversor() {
+        //acessar o que foi digitado
+        var reais = document.getElementById("reais").value;
 
-            //converter de string para float
-             reais = parseFloat(reais);
+        //converter de string para float
+        reais = parseFloat(reais);
 
-            //converter para dolares
-            dolares = reais / 4.98;
+        //converter para dolares
+        dolares = reais / 4.98;
 
-            console.log(dolares);
+        console.log(dolares);
 
-            alert(dolares + " dolares");
-        }
+        alert(dolares + " dolares");
+      }
     </script>
-    <br>
-    <br>
+    <br />
+    <br />
     <button><a href="3-questao.html">Segunda questao</a></button>
-</body>
+  </body>
 </html>

@@ -1,20 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-<h1>3-questao</h1>
-<input placeholder="salario do funcionario:"/>
-<br>
-<br>
-<input placeholder="numero de horas trabalhadas no mes:"/>
+  </head>
+  <body>
+    <h1>3-questao</h1>
+    <input id="n1" placeholder="salário hora do funcionário :" />
+    <br />
+    <br />
+    <input id="n2" placeholder="numero de horas trabalhadas no mes:" />
+    <br />
+    <br />
+    <button id="multiplicar" onclick="multiplicar()">Multiplicar</button>
 
-<script>
-    
-</script>
-</body>
+    <script>
+      function multiplicar() {
+        var n1 = document.getElementById("n1").value;
+        var n2 = document.getElementById("n2").value;
+        var m = n1 * n2;
+        alert(m);
+      }
+    </script>
+  </body>
 </html>
