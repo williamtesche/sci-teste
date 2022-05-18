@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>3-questao</h1>
+    <input id="n1" placeholder="votos Nulos" />
+    <br />
+    <br />
+    <input id="n2" placeholder="votos Brancos"/>
+    <br />
+    <br />
+    <input id="n3" placeholder="votos validos"/>
+    <br />
+    <br />
+    <button id="multiplicar" onclick="multiplicar()">Multiplicar</button>
+
+    <script>
+      function multiplicar() {
+        var n1 = document.getElementById("n1").value;
+        var n2 = document.getElementById("n2").value;
+        var n3 = document.getElementById("n3").value;
+        var totaleleitores = n1 + n3 + n2
+
+        if(n1 <= 0){
+            return alert("Valor do Voto Nulo Incompativel")
+        }else{
+            var soma = 100*(n1/totaleleitores)
+            return alert("Quantidade de Votos Nulos:" + n1 + "Porcentagem de Votos Nulos:" + soma + "%");
+        }
+
+        if(n3 <= 0){
+            return alert("Valor do Voto Valido Incompativel")
+
+        }else{
+            var soma = 100*(n3/totaleleitores)
+            return  alert("Quantidade de Votos Valido:" + n3 + "Porcentagem de Votos Nulos:" + soma + "%");
+        }
+
+        if(n2 <= 0){
+            return alert("Valor do Voto Branco Incompativel")
+        }else{
+            var soma = 100*(n2/totaleleitores)
+            return alert("Quantidade de Votos Brancos:" + n2 + "Porcentagem de Votos Brancos:" + soma + "%");
+        }
+
+        if(totaleleitores <= 0){
+            return alert("Total de Eleitores inválido")
+        }else{
+            return  alert("O Número de Eleitores são:" + totaleleitores)
+        }
+
+      }
+      
+    </script>
+  </body>
+</html>

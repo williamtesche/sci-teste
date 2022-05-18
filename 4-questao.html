@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>4-questao</h1>
+    <h3>Valor</h3>
+    <input id="n1" placeholder="" />
+    <br />
+    <br />
+    <h3>Porcentagem</h3>
+    <input id="n2" placeholder="" />
+    <br />
+    <br />
+    <button id="multiplicar" onclick="multiplicar()">Multiplicar</button>
+
+    <script>
+      function multiplicar() {
+        var n1 = document.getElementById("n1").value;
+        var n2 = document.getElementById("n2").value;
+        var m = n1
+     
+        if(n2 == 5){
+          let valor5 = 0.05 * m 
+          return  alert(valor5)   
+        }
+
+        if(n2 == 10){
+            let valor10 = 0.1 * m 
+              return alert(valor10) 
+        }
+
+        if(n2 == 15){
+            let valor15 = 0.15 * m 
+              return alert(valor15) 
+        }
+
+        if(n2 == 20){
+            let valor15 = 0.20 * m 
+              return alert(valor15) 
+        }
+
+        if(n2 == 25){
+            let valor15 = 0.25 * m 
+              return alert(valor15) 
+        }
+
+      }
+      
+    </script>
+  </body>
+</html>

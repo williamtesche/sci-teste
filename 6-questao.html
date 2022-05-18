@@ -8,10 +8,11 @@
   </head>
   <body>
     <h1>3-questao</h1>
-    <input id="n1" placeholder="salário hora do funcionário :" />
+    <h3>massa</h3>
+    <input id="n1" />
     <br />
-    <br />
-    <input id="n2" placeholder="numero de horas trabalhadas no mes:" />
+    <h3>peso</h3>
+    <input id="n2"  />
     <br />
     <br />
     <button id="multiplicar" onclick="multiplicar()">Multiplicar</button>
@@ -20,20 +21,12 @@
       function multiplicar() {
         var n1 = document.getElementById("n1").value;
         var n2 = document.getElementById("n2").value;
-        var m = n1 * n2;
-        var guardaValor = m;
-        var real = m.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
         
-        if(n2 <= 220){
-          alert(real);
-        }
+        var soma = n1 / (n2 ** 2)
+         var result = parseFloat(soma.toFixed(1));
 
-        if(n2 > 220){
-          let porcet = m / 2
-          let valor = porcet + guardaValor
-          var hrExtra = valor.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
-          alert(hrExtra);
-        }
+
+        alert(result)
       }
       
     </script>

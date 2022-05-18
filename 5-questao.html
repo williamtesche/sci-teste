@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>3-questao</h1>
+    <h3>Juíz 1</h3>
+    <input id="n1" placeholder="salário hora do funcionário :" />
+    <br />
+    <h3>Juíz 2</h3>
+    <input id="n2" placeholder="numero de horas trabalhadas no mes:" />
+    <br />
+    <h3>Juíz 3</h3>
+    <input id="n3" placeholder="salário hora do funcionário :" />
+    <br />
+    <h3>Juíz 4</h3>
+    <input id="n4" placeholder="numero de horas trabalhadas no mes:" />
+    <br />
+    <h3>Juíz 5</h3>
+    <input id="n5" placeholder="salário hora do funcionário :" />
+    <br />
+    <h3>Juíz 6</h3>
+    <input id="n6" placeholder="numero de horas trabalhadas no mes:" />
+    <br />
+    <br />
+    <button id="multiplicar" onclick="multiplicar()">Multiplicar</button>
+    
+    <script>
+      function multiplicar() {
+        var n1 = document.getElementById("n1").value;
+        var n2 = document.getElementById("n2").value;
+        var n3 = document.getElementById("n3").value;
+        var n4 = document.getElementById("n4").value;
+        var n5 = document.getElementById("n5").value;
+        var n6 = document.getElementById("n6").value;
+     
+        var valores = [n1, n2, n3, n4, n5, n6];
+
+        var nuMin = Array.min(valores)
+
+        console.log(nuMin)
+      
+         var t = valores.filter(item => item.n = nuMin);
+        // var t2 = valores.filter((item) => item.n !== Array.max(valores))
+
+        console.log(t)
+        // alert(Array.min(valores))
+              
+
+      }
+       Array.min = function(array) {
+            return Math.min.apply(Math, array);
+        };
+
+        Array.max = function(array) {
+            return Math.max.apply(Math, array);
+        };
+    </script>
+  </body>
+</html>
